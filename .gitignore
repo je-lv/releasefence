@@ -1,0 +1,10 @@
+build/
+.coverage
+delivery/
+dist/
+*.egg-info/
+__pycache__/
+.pytest_cache/
+.review/
+.tmp/
+.venv/

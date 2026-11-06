@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "releasefence"
+dynamic = ["version"]
+description = "Check a source directory or ZIP for secrets and unsafe paths before you publish it, offline."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+authors = [{name = "je-lv"}]
+keywords = ["security", "secrets", "release", "supply-chain", "zip", "manifest", "pre-publish"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Information Technology",
+  "Operating System :: POSIX",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Topic :: Security",
+  "Topic :: Software Development :: Build Tools",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/je-lv/releasefence"
+Repository = "https://github.com/je-lv/releasefence"
+Issues = "https://github.com/je-lv/releasefence/issues"
+
+[project.scripts]
+releasefence = "releasefence.cli:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "releasefence.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["releasefence*"]

@@ -1,0 +1,48 @@
+{
+  "ignore": [
+    {
+      "rule_id": "RF101",
+      "path_glob": "*fixtures/unsafe/outside-link"
+    },
+    {
+      "rule_id": "RF103",
+      "path_glob": "*fixtures/unsafe/outside-link"
+    },
+    {
+      "rule_id": "RF201",
+      "path_glob": "*fixtures/unsafe/id_rsa"
+    },
+    {
+      "rule_id": "RF202",
+      "path_glob": "*fixtures/unsafe/.env"
+    },
+    {
+      "rule_id": "RF203",
+      "path_glob": "*fixtures/unsafe/.env"
+    },
+    {
+      "rule_id": "RF204",
+      "path_glob": "*fixtures/unsafe/.env"
+    },
+    {
+      "rule_id": "RF301",
+      "path_glob": "*fixtures/unsafe/.env"
+    },
+    {
+      "rule_id": "RF302",
+      "path_glob": "*fixtures/unsafe/id_rsa"
+    },
+    {
+      "rule_id": "RF304",
+      "path_glob": "*fixtures/unsafe/.DS_Store"
+    },
+    {
+      "rule_id": "RF304",
+      "path_glob": "*fixtures/unsafe/notes.txt~"
+    },
+    {
+      "rule_id": "RF307",
+      "path_glob": "*fixtures/unsafe/certs/server.pem"
+    }
+  ]
+}

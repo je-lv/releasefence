@@ -1,0 +1,6 @@
+include LICENSE README.md CHANGELOG.md releasefence.json
+recursive-include docs *.md *.svg
+recursive-include scripts *.py
+recursive-include fixtures *
+recursive-include tests *.py
+global-exclude __pycache__ *.py[cod]
